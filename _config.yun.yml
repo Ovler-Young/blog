@@ -1,0 +1,68 @@
+language: zh-CN
+
+social:
+  - name: RSS
+    # set rss in your root config
+    # https://github.com/hexojs/hexo-generator-feed
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: GitHub
+    link: https://github.com/Ovler-Young
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:ovlertheyoung@gmail.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=310842841
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: Telegram
+    link: https://t.me/Ovler
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: Telegram Channel
+    link: https://t.me/shengxiaoguan
+    icon: icon-telegram-fill
+    color: "#0088CC"
+
+banner:
+  enable: true
+  title: 
+    - Ovler
+    - 的
+    - hexo
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😀
+    message: Hello world!
+
+footer:
+  since: 2022
+
+mourn:
+  enable: true
+  days:
+    - "4-4"
