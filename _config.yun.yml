@@ -66,3 +66,19 @@ mourn:
   enable: true
   days:
     - "4-4"
+
+# https://yun.yunyoujun.cn/guide/additional-package-support.html#%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+wordcloud:
+  enable: true
+  height: 350
+
+mermaid:
+  enable: true
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true # default true
+  global: true #default true
