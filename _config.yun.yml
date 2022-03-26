@@ -81,3 +81,8 @@ font:
   monospace:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
   
+engine_search:
+  enable: false
+
+local_search:
+  enable: true

@@ -254,48 +254,23 @@ font:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
 
-
-
-## tbc
-
- ```powershell
-   30 pnpm install hexo-theme-yun@latest --save
-   31 hexo config theme yun
-   32 hexo s
-   33 pnpm install hexo-render-pug hexo-renderer-stylus --save
-   34 hexo s
-   35 hexo s
-   36 pnpm install hexo-generator-feed --save
-   37 hexo s
-   38 hexo s
-   39 hexo s
-   40 hexo s
-   41 hexo s
-   42 hexo s
-   43 hexo s
-   44 hexo s
-   45 hexo s
-   46 hexo s
-   47 hexo new page about
-   48 hexo s
-   49 pnpm install --latest
-   50 pnpm up --latest
-   51 hexo s
-   52 pnpm up --latest
-   53 hexo generate
-   54 hexo clean
-   55 hexo generate
-   56 hexo s
-   57 npm install hexo-wordcount
-   58 Get-History
- ```
-
-![image-20220325201544123](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262050908.png)
-
-配置搜索
+#### 配置搜索
 
 ```
 pnpm install hexo-generator-search --save
+```
+
+![image-20220327012220168](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270122224.png)
+
+在`_config.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
+
+```yaml
+# 关闭默认的引擎搜索
+engine_search:
+  enable: false
+# 开启本地搜索
+local_search:
+  enable: true
 ```
 
 
