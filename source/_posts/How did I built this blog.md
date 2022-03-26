@@ -75,7 +75,9 @@ pnpm install
 
 ![image-20220325201839522](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042828.png)
 
-观察发现 hexo 有新稳定版本6.1.0，故升级。
+### 升级 Hexo 版本
+
+观察发现 Hexo 有新稳定版本6.1.0，故升级。
 
 ```powershell
 pnpm update ----latest
@@ -87,9 +89,15 @@ pnpm update ----latest
 
 ![image-20220325202058110](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042710.png)
 
+此时发现有warn，故修改warn处，顺便配置文件进行了 ~~本地化~~ 修改：
+
+![image-20220325203724428](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042834.png)
+
 此时网页效果为：
 
 ![image-20220325202141659](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042942.png)
+
+### 选用 YUN 主题
 
 此时感觉网页效果不佳，准备安装并使用 [Hexo-Theme-Yun](https://yun.yunyoujun.cn/) 主题。
 
@@ -102,17 +110,133 @@ hexo config theme yun
 
 ![image-20220325202524210](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262043068.png)
 
-此时发现有warn，故修改warn处。
 
-![image-20220325203544377](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042923.png)
 
-再对配置文件进行一定的修改：
+### 配置 YUN theme 
 
-![image-20220325203724428](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042834.png)
+在 YUN 主题的配置文件 `_config.yun.yml` 中做以下配置：
 
-并且配置 YUN theme 配置文件
+#### 语言设置为中文
 
-# tbc
+```yaml
+language: zh-CN
+```
+
+#### 配置侧边栏社交图标
+
+##### 特别：关于RSS
+
+RSS 是本人的心头爱，肯定要进行配置。配置 RSS 不止需要在  `_config.yun.yml`  中进行配置，还需要安装 hexo-generator-feed，具体如下：
+
+```powershell
+pnpm install hexo-generator-feed --save
+```
+
+再在`_config.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
+
+```yaml
+feed:
+  enable: true
+  limit: 20
+  hub: https://pubsubhubbub.appspot.com/
+  content: true
+  order_by: -date
+  icon: images/avatar.jpg
+  autodiscovery: false
+  template:
+```
+
+再在 `_config.yun.yml` 中加入以下配置，完成侧边栏的设置。下面的是当时我实际配置文件。
+
+```yaml
+# 配置侧边栏社交图标
+social:
+  - name: RSS
+    link: /atom.xml
+    icon: icon-rss-line
+    color: orange
+  - name: GitHub
+    link: https://github.com/Ovler-Young
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:ovlertheyoung@gmail.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=310842841
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: Telegram
+    link: https://t.me/Ovler
+    icon: icon-telegram-line
+    color: "#0088CC"
+  - name: Telegram Channel
+    link: https://t.me/shengxiaoguan
+    icon: icon-telegram-fill
+    color: "#0088CC"
+```
+
+#### 配置标语动画
+
+```yaml
+banner:
+  enable: true
+  title: 
+    - Ovler
+    - 的
+    - hexo
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+```
+
+#### 配置侧边栏社交图标
+
+```yaml
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+```
+
+#### 配置侧边栏社交图标
+
+```yaml
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😀
+    message: Hello world!
+```
+
+#### 配置侧边栏社交图标
+
+```yaml
+footer:
+  since: 2022
+```
+
+#### 配置侧边栏社交图标
+
+```yaml
+mourn:
+  enable: true
+  days:
+    - "4-4"
+```
+
+## tbc
 
  ```powershell
    30 pnpm install hexo-theme-yun@latest --save
@@ -146,7 +270,35 @@ hexo config theme yun
    58 Get-History
  ```
 
-![image-20220325201544123](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325201544123.png)
+![image-20220325201544123](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262050908.png)
+
+配置搜索
+
+```
+pnpm install hexo-generator-search --save
+```
+
+
+
+## 处理 warngins
+
+![image-20220326235513205](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262355279.png)
+
+Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这份资料](https://www.haoyizebo.com/posts/710984d0/)中发现了解决办法。故，在`package.json`中加入以下内容：
+
+```json
+  "resolutions": {
+    "stylus": "^0.57.0"
+  }
+```
+
+将 `nib` 中的过时package强制解析为新版本。在运行 `pnpm install     ` , 更新包及依赖。
+
+顺便，它也干掉了 pnpm install 时报的4个 deprecated warn.
+
+(nib 咋GitHub更新npm不发包呢…)
+
+剩下两个 pnpm install 的 deprecated warn 都是来自 [css](https://github.com/reworkcss/css) 这个两年没维护的老东西了… 暂时无法处理
 
 ## 主要参考资料
 
@@ -156,5 +308,5 @@ https://pnpm.io/cli/update
 
 https://yun.yunyoujun.cn/guide/
 
-
+https://www.haoyizebo.com/posts/710984d0/
 
