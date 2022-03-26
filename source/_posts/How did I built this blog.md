@@ -1,3 +1,15 @@
+---
+title: How did I built this blog
+date: 2022-03026 20:36:15
+tags:
+  - [hexo]
+  - [blog]
+---
+
+记录了这个站的建立历程
+
+<!-- more -->
+
 # How did I built this blog
 
 ## 零：内容框架、托管服务等的选择
