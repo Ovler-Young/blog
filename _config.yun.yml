@@ -91,3 +91,6 @@ engine_search:
 
 local_search:
   enable: true
+
+wordcloud:
+  enable: true

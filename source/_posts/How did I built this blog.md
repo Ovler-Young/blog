@@ -263,13 +263,15 @@ font:
 
 #### 配置搜索
 
+配置搜索不止需要在  `_config.yun.yml`  中进行配置，还需要安装 hexo-generator-search，具体如下：
+
 ```
 pnpm install hexo-generator-search --save
 ```
 
 ![image-20220327012220168](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270122224.png)
 
-在`_config.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
+在`_config.yun.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
 
 ```yaml
 # 关闭默认的引擎搜索
@@ -280,7 +282,42 @@ local_search:
   enable: true
 ```
 
+#### 配置 tags
 
+配置搜索不止需要在  `_config.yun.yml`  中进行配置，还需要安装 hexo-generator-search，具体如下(截图时已安装)：
+
+```
+pnpm install hexo-generator-search --save
+```
+
+![image-20220327014615469](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270146607.png)
+
+参考[教程](https://yun.yunyoujun.cn/guide/page.html#%E6%A0%87%E7%AD%BE-tags), 有
+
+> 新建 `tags` 页面，在博客根目录下输入：
+>
+> ```
+> hexo new page tags
+> ```
+>
+> 修改 `source/tags/index.md` 的 `Front Matter`
+>
+> ```
+> ---
+> date: 2017-10-09 19:11:58
+> comments: false
+> type: tags
+> ---
+> ```
+>
+> 在 `_config.yun.yml` 中设置：
+>
+> ```
+> wordcloud:
+>   enable: true
+> ```
+>
+> 来使用彩色的词云替代原生的标签云。
 
 ### 处理 warngins
 
