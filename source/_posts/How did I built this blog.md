@@ -41,23 +41,23 @@ tags:
 
 前往 [Vercel](https://vercel.com/dashboard) ，新增项目。
 
-![image-20220325182649912](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325182649912.png)
+![image-20220325182649912](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042218.png)
 
 ### 前往模板中心寻找模板
 
-![image-20220325182905036](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325182905036.png)
+![image-20220325182905036](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042844.png)
 
 ### 选择 Hexo
 
-![image-20220325182957226](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325182957226.png)
+![image-20220325182957226](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042155.png)
 
 ### 创建 Git 文件夹
 
-![image-20220325183111580](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325183111580.png)
+![image-20220325183111580](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042466.png)
 
 ### 完成
 
-![image-20220325183645368](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325183645368.png)
+![image-20220325183645368](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042772.png)
 
 此时已经搭建完成一个基本的 Hexo 站点。
 
@@ -73,7 +73,7 @@ pnpm install
 
 结果为
 
-![image-20220325201839522](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325201839522.png)
+![image-20220325201839522](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042828.png)
 
 观察发现 hexo 有新稳定版本6.1.0，故升级。
 
@@ -81,15 +81,15 @@ pnpm install
 pnpm update ----latest
 ```
 
-![image-20220325202013959](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325202013959.png)
+![image-20220325202013959](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042910.png)
 
 在本地运行 hexo 服务
 
-![image-20220325202058110](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325202058110.png)
+![image-20220325202058110](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042710.png)
 
 此时网页效果为：
 
-![image-20220325202141659](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325202141659.png)
+![image-20220325202141659](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042942.png)
 
 此时感觉网页效果不佳，准备安装并使用 [Hexo-Theme-Yun](https://yun.yunyoujun.cn/) 主题。
 
@@ -98,17 +98,17 @@ pnpm install hexo-theme-yun@latest --save
 hexo config theme yun
 ```
 
-![image-20220325202453027](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325202453027.png)
+![image-20220325202453027](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042261.png)
 
-![image-20220325202524210](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325202524210.png)
+![image-20220325202524210](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262043068.png)
 
 此时发现有warn，故修改warn处。
 
-![image-20220325203544377](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325203544377.png)
+![image-20220325203544377](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042923.png)
 
 再对配置文件进行一定的修改：
 
-![image-20220325203724428](C:\Users\YU\AppData\Roaming\Typora\typora-user-images\image-20220325203724428.png)
+![image-20220325203724428](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042834.png)
 
 并且配置 YUN theme 配置文件
 
