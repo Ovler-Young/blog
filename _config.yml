@@ -3,6 +3,7 @@ subtitle: null
 description: null
 keywords: null
 author: Ovler Young
+favicon: /source/images/favicon.png
 language: null
 timezone: null
 url: http://hexo.180811.xyz
@@ -44,3 +45,13 @@ pagination_dir: page
 theme: yun
 deploy:
   type: null
+
+feed:
+  enable: true
+  limit: 20
+  hub: https://pubsubhubbub.appspot.com/
+  content: true
+  order_by: -date
+  icon: images/avatar.jpg
+  autodiscovery: false
+  template:
