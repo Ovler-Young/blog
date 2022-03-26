@@ -195,14 +195,14 @@ banner:
     icon: icon-arrow-down-s-line
 ```
 
-#### 配置侧边栏社交图标
+#### 配置替换鼠标光标
 
 ```yaml
 cursor:
   enable: true
 ```
 
-#### 配置侧边栏社交图标
+#### 配置侧边栏头像
 
 ```yaml
 avatar:
@@ -217,11 +217,18 @@ avatar:
     message: Hello world!
 ```
 
-#### 配置侧边栏社交图标
+#### 配置页脚
+
+配置了年份和运行时间
 
 ```yaml
 footer:
   since: 2022
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix: (●'◡'●)
+    start_time: "2022-03-21T17:05:00"
 ```
 
 #### 使用 霞鹜文楷 字体

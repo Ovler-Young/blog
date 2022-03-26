@@ -61,6 +61,11 @@ avatar:
 
 footer:
   since: 2022
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix: (●'◡'●)
+    start_time: "2022-03-21T17:05:00"
 
 mourn:
   enable: true
