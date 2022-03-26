@@ -66,8 +66,3 @@ mourn:
   enable: true
   days:
     - "4-4"
-
-wordcount:
-  enable: true
-  count: true
-  height: 350
