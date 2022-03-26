@@ -200,9 +200,6 @@ banner:
 ```yaml
 cursor:
   enable: true
-  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
 ```
 
 #### 配置侧边栏社交图标
@@ -227,14 +224,37 @@ footer:
   since: 2022
 ```
 
-#### 配置侧边栏社交图标
+#### 使用 霞鹜文楷 字体
+
+个人较为喜欢 [霞鹜文楷](https://github.com/lxgw/LxgwWenKai) 字体，参考[教程](https://github.com/lxgw/LxgwWenKai/issues/24)后配置。
+
+先安装`lxgw-wenkai-webfont`字体包：
+
+```
+ pnpm install lxgw-wenkai-webfont --save
+```
+
+![image-20220327011612735](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270116800.png)
+
+再在 `_config.yun.yml` 中加入以下配置，完成霞鹜文楷字体的设置。
 
 ```yaml
-mourn:
-  enable: true
-  days:
-    - "4-4"
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@latest/style.css
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
+
+
 
 ## tbc
 
@@ -309,4 +329,6 @@ https://pnpm.io/cli/update
 https://yun.yunyoujun.cn/guide/
 
 https://www.haoyizebo.com/posts/710984d0/
+
+https://github.com/lxgw/LxgwWenKai/issues/24
 

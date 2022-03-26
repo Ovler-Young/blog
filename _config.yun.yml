@@ -66,3 +66,18 @@ mourn:
   enable: true
   days:
     - "4-4"
+
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@latest/style.css
+  serif:
+    family: "'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif"
+    weight: 900
+  sans_serif:
+    family: "'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+  

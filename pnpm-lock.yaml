@@ -23,6 +23,7 @@ specifiers:
   hexo-theme-yun: ^1.8.11
   hexo-util: ^2.6.0
   js-yaml: ^4.1.0
+  lxgw-wenkai-webfont: ^1.5.0
 
 dependencies:
   bulma-stylus: 0.9.2-rc.1
@@ -44,6 +45,7 @@ dependencies:
   hexo-theme-yun: 1.8.11
   hexo-util: 2.6.0
   js-yaml: 4.1.0
+  lxgw-wenkai-webfont: 1.5.0
 
 packages:
 
@@ -2670,6 +2672,10 @@ packages:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
       tslib: 2.3.1
+    dev: false
+
+  /lxgw-wenkai-webfont/1.5.0:
+    resolution: {integrity: sha512-/BRKqgvMvjTm147m3j5dvt3IEz7v0AL7te2Z4xqRycM4nVnmaE+E8BDvihj7ZOQ7jFE2EUPLq0Ae70I66WSuGA==}
     dev: false
 
   /make-dir/2.1.0:
