@@ -8,8 +8,9 @@ language: null
 timezone: null
 url: http://hexo.180811.xyz
 root: /
-permalink: ':year/:month/:day/:title/'
-permalink_defaults: null
+permalink: ':year/:month//:urlname/'
+permalink_defaults: 
+  urlname: index
 source_dir: source
 public_dir: public
 tag_dir: tags
