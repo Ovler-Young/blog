@@ -111,9 +111,7 @@ hexo config theme yun
 
 ![image-20220325202524210](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647495.png)
 
-
-
-### 配置 YUN theme 
+### 配置 YUN theme
 
 在 YUN 主题的配置文件 `_config.yun.yml` 中做以下配置：
 
@@ -320,6 +318,12 @@ pnpm install hexo-generator-search --save
 >
 > 来使用彩色的词云替代原生的标签云。
 
+### 配置页面
+
+#### 配置链接
+
+
+
 ### 处理 warngins
 
 ![image-20220326235513205](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271648971.png)
@@ -332,7 +336,7 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
   }
 ```
 
-将 `nib` 中的过时package强制解析为新版本。在运行 `pnpm install     ` , 更新包及依赖。
+将 `nib` 中的过时package强制解析为新版本。在运行 `pnpm install` , 更新包及依赖。
 
 顺便，它也干掉了 pnpm install 时报的4个 deprecated warn.
 
@@ -342,13 +346,12 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 
 ## 主要参考资料
 
-https://vercel.com/guides/deploying-hexo-with-vercel
+<https://vercel.com/guides/deploying-hexo-with-vercel>
 
-https://pnpm.io/cli/update
+<https://pnpm.io/cli/update>
 
-https://yun.yunyoujun.cn/guide/
+<https://yun.yunyoujun.cn/guide/>
 
-https://www.haoyizebo.com/posts/710984d0/
+<https://www.haoyizebo.com/posts/710984d0/>
 
-https://github.com/lxgw/LxgwWenKai/issues/24
-
+<https://github.com/lxgw/LxgwWenKai/issues/24>
