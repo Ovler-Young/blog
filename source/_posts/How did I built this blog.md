@@ -1,6 +1,6 @@
 ---
 title: How did I built this blog
-date: 2022-03026 20:36:15
+date: 2022-03-26 20:36:15
 tags:
   - [hexo]
   - [blog]
@@ -42,23 +42,23 @@ urlname: blog_build
 
 前往 [Vercel](https://vercel.com/new) ，新增项目。
 
-![image-20220325182649912](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042218.png)
+![image-20220325182649912](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647996.png)
 
 ### 前往模板中心寻找模板
 
-![image-20220325182905036](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042844.png)
+![image-20220325182905036](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647650.png)
 
 ### 选择 Hexo
 
-![image-20220325182957226](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042155.png)
+![image-20220325182957226](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647418.png)
 
 ### 创建 Git 文件夹
 
-![image-20220325183111580](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042466.png)
+![image-20220325183111580](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647046.png)
 
 ### 完成
 
-![image-20220325183645368](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042772.png)
+![image-20220325183645368](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647937.png)
 
 此时已经搭建完成一个基本的 Hexo 站点。
 
@@ -74,7 +74,7 @@ pnpm install
 
 结果为
 
-![image-20220325201839522](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042828.png)
+![image-20220325201839522](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647045.png)
 
 ### 升级 Hexo 版本
 
@@ -84,19 +84,19 @@ pnpm install
 pnpm update ----latest
 ```
 
-![image-20220325202013959](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042910.png)
+![image-20220325202013959](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647866.png)
 
 在本地运行 hexo 服务
 
-![image-20220325202058110](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042710.png)
+![image-20220325202058110](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647331.png)
 
 此时发现有warn，故修改warn处，顺便配置文件进行了 ~~本地化~~ 修改：
 
-![image-20220325203724428](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042834.png)
+![image-20220325203724428](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647536.png)
 
 此时网页效果为：
 
-![image-20220325202141659](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042942.png)
+![image-20220325202141659](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647227.png)
 
 ### 选用 YUN 主题
 
@@ -107,9 +107,9 @@ pnpm install hexo-theme-yun@latest --save
 hexo config theme yun
 ```
 
-![image-20220325202453027](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042261.png)
+![image-20220325202453027](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647294.png)
 
-![image-20220325202524210](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262043068.png)
+![image-20220325202524210](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647495.png)
 
 
 
@@ -242,7 +242,7 @@ footer:
  pnpm install lxgw-wenkai-webfont --save
 ```
 
-![image-20220327011612735](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270116800.png)
+![image-20220327011612735](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647191.png)
 
 再在 `_config.yun.yml` 中加入以下配置，完成霞鹜文楷字体的设置。
 
@@ -270,7 +270,7 @@ font:
 pnpm install hexo-generator-search --save
 ```
 
-![image-20220327012220168](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270122224.png)
+![image-20220327012220168](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647769.png)
 
 在`_config.yun.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
 
@@ -291,7 +291,7 @@ local_search:
 pnpm install hexo-generator-search --save
 ```
 
-![image-20220327014615469](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203270146607.png)
+![image-20220327014615469](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271648458.png)
 
 参考[教程](https://yun.yunyoujun.cn/guide/page.html#%E6%A0%87%E7%AD%BE-tags), 有
 
@@ -322,7 +322,7 @@ pnpm install hexo-generator-search --save
 
 ### 处理 warngins
 
-![image-20220326235513205](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262355279.png)
+![image-20220326235513205](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271648971.png)
 
 Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这份资料](https://www.haoyizebo.com/posts/710984d0/)中发现了解决办法。故，在`package.json`中加入以下内容：
 
