@@ -4,6 +4,7 @@ date: 2022-03026 20:36:15
 tags:
   - [hexo]
   - [blog]
+urlname: blog_build
 ---
 
 记录了这个站的建立历程
