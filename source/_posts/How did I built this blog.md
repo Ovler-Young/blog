@@ -39,7 +39,7 @@ tags:
 
 ### 在 Vercel 创建新项目
 
-前往 [Vercel](https://vercel.com/dashboard) ，新增项目。
+前往 [Vercel](https://vercel.com/new) ，新增项目。
 
 ![image-20220325182649912](https://raw.githubusercontent.com/Ovler-Young/pic/main/202203262042218.png)
 
