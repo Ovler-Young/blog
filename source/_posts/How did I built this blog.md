@@ -1,19 +1,20 @@
 ---
 title: How did I built this blog
 date: 2022-03-26 20:36:15
+updated: 2022-03-31 02:30:16
 tags:
   - [hexo]
   - [blog]
 urlname: blog_build
+categories:
+- Technology
 ---
 
 记录了这个站的建立历程
 
 <!-- more -->
 
-# How did I built this blog
-
-## 零：内容框架、托管服务等的选择
+## 零：内容框架、托管服务等的选择及必要的准备
 
 ### 内容框架：选择 Hexo
 
@@ -30,11 +31,25 @@ urlname: blog_build
 
 - 既往使用经验较多
 
+可以从[官网](https://vercel.com/signup)注册。
+
 ### 包管理器：选择 pnpm
 
 - 节约磁盘空间
+
 - 安装速度快
+
 - 各系统间表现稳定
+
+安装可以参考[官方教程](https://www.pnpm.cn/installation)。
+
+### 存储处；选择 GitHub
+
+- 与 Vercel 深度结合
+- 使用场景多样
+- 全球最大
+
+可以从[官网](https://github.com/signup)注册。
 
 ## 一：使用 Vercel 模板快速创建 Hexo 网站
 
@@ -236,7 +251,7 @@ footer:
 
 先安装`lxgw-wenkai-webfont`字体包：
 
-```
+```powershell
  pnpm install lxgw-wenkai-webfont --save
 ```
 
@@ -260,17 +275,84 @@ font:
     family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
 ```
 
+#### 配置友链
+
+新建页面：
+
+```powershell
+hexo new page links
+```
+
+![image-20220331023933139](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203310239171.png)
+
+根据文档对友链进行配置：
+
+> 进入 `source/links/index.md`，设置 `links` 字段。
+>
+> - `url`: 博客链接
+> - `avatar`: 头像图片链接
+> - `name`: 怎么称呼？
+> - `blog`: 站点名称
+> - `desc`: 一句话描述
+> - `color`: 代表色，默认是灰色 `gray`
+
+根据文档，我的友链配置为：
+
+```yaml
+---
+layout: links
+title: Friends
+date: 2019-06-21 13:06:06
+keywords: 链接
+description: 一个emm，咖啡馆？
+comments: true
+links:
+  - url: https://hexo.180811.xyz
+    avatar: https://hexo.180811.xyz/images/avatar.jpg
+    name: Ovler
+    blog: Ovler 的 Hexo
+    desc: Feeling tired.
+    color: "#a5f4e8" # 代表色
+    email: ovlertheyoung@gmail.com
+  - url: https://blog.180811.xyz
+    avatar: https://hexo.180811.xyz/images/avatar.jpg
+    name: Ovler
+    blog: Ovler 的 typecho
+    desc: 以前的博客站，似乎，好久没更新了
+    color: "#df5749" # 代表色
+    email: ovlertheyoung@gmail.com
+placeholder: 还没想好说些什么 # 默认对友链的描述
+tip: 友链加载中～如失败请刷新重试～
+---
+
+## 友链
+
+一个emm，咖啡馆？
+
+来坐坐吧！
+
+目前还没啥来加的，大佬们可以通过侧边栏的各种联系方式联系到我来加友链，我会尽快回复的！
+```
+
+目前只有自娱自乐，也希望日后能加多一些。
+
+### 配置页面
+
+#### 配置链接
+
+参考 <https://hexo.io/zh-cn/docs/permalinks> 中配置修改
+
 #### 配置搜索
 
-配置搜索不止需要在  `_config.yun.yml`  中进行配置，还需要安装 hexo-generator-search，具体如下：
+配置搜索需要安装 hexo-generator-search，具体如下：
 
-```
+```powershell
 pnpm install hexo-generator-search --save
 ```
 
 ![image-20220327012220168](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271647769.png)
 
-在`_config.yun.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
+再在主题文件`_config.yun.yml`的末尾加入如下内容作为`hexo-generator-feed`的配置项：
 
 ```yaml
 # 关闭默认的引擎搜索
@@ -283,25 +365,25 @@ local_search:
 
 #### 配置 tags
 
-配置搜索不止需要在  `_config.yun.yml`  中进行配置，还需要安装 hexo-generator-search，具体如下(截图时已安装)：
+安装 hexo-generator-tag，具体如下(截图时已安装)：
 
-```
-pnpm install hexo-generator-search --save
+```powershell
+pnpm install hexo-generator-tag --save
 ```
 
 ![image-20220327014615469](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203271648458.png)
 
-参考[教程](https://yun.yunyoujun.cn/guide/page.html#%E6%A0%87%E7%AD%BE-tags), 有
+参考主题的[教程](https://yun.yunyoujun.cn/guide/page.html#%E6%A0%87%E7%AD%BE-tags), 有
 
 > 新建 `tags` 页面，在博客根目录下输入：
 >
-> ```
+> ```bash
 > hexo new page tags
 > ```
 >
 > 修改 `source/tags/index.md` 的 `Front Matter`
 >
-> ```
+> ```yaml
 > ---
 > date: 2017-10-09 19:11:58
 > comments: false
@@ -311,18 +393,35 @@ pnpm install hexo-generator-search --save
 >
 > 在 `_config.yun.yml` 中设置：
 >
-> ```
+> ```yaml
 > wordcloud:
->   enable: true
+> enable: true
 > ```
 >
 > 来使用彩色的词云替代原生的标签云。
 
-### 配置页面
+#### 配置分类
 
-#### 配置链接
+因为原有配置中已经包含了`hexo-generator-tag`依赖，配置分类不再需要安装新插件。
 
+新建页面：
 
+```powershell
+hexo new page categories
+```
+
+![image-20220331023215967](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203310232056.png)
+
+修改新生成文档的头部信息：
+
+```yaml
+---
+title: categories
+date: 2022-03-31 02:27:20
+comments: false
+type: categories
+---
+```
 
 ### 处理 warngins
 
@@ -342,7 +441,21 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 
 (nib 咋GitHub更新npm不发包呢…)
 
-剩下两个 pnpm install 的 deprecated warn 都是来自 [css](https://github.com/reworkcss/css) 这个两年没维护的老东西了… 暂时无法处理
+剩下两个 pnpm install 的 deprecated warn 都是来自 [CSS](https://github.com/reworkcss/css) 这个两年没维护的老东西了… 暂时无法处理
+
+## 还要干啥
+
+- 把之前的 [typecho 博客](https://blog.180811.xyz) 搬过来
+
+- 补完站点介绍与个人页面
+
+- ~~写写怎么搞个 [HexoPlusPlus](https://github.com/HexoPlusPlus/HexoPlusPlus) 来管理 Hexo~~
+
+  UPD： [HexoPlusPlus](https://github.com/HexoPlusPlus/HexoPlusPlus)， 它， achieved了……等替代品 [Wexagonal](https://github.com/Wexagonal/Wexagonal) 变得可用中…
+  
+- 还有啊，别做鸽子了：（
+
+  不过感谢你们的催更，嘻嘻
 
 ## 主要参考资料
 
@@ -355,3 +468,5 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 <https://www.haoyizebo.com/posts/710984d0/>
 
 <https://github.com/lxgw/LxgwWenKai/issues/24>
+
+<https://hexo.io/zh-cn/docs/permalinks>
