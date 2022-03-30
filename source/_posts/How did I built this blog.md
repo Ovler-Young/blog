@@ -457,6 +457,8 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 
   不过感谢你们的催更，嘻嘻
 
+- 绑定网址
+
 ## 主要参考资料
 
 <https://vercel.com/guides/deploying-hexo-with-vercel>
