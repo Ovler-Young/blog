@@ -4,8 +4,8 @@ description: null
 keywords: null
 author: Ovler Young
 favicon: /images/avatar.jpg
-language: null
-timezone: null
+language: zh-CN
+timezone: Asia/Shanghai
 url: http://hexo.180811.xyz
 root: /
 permalink: ':year/:month/:urlname/'
@@ -18,7 +18,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: ':lang'
-skip_render: null
+skip_render: false
 new_post_name: ':title.md'
 default_layout: post
 titlecase: false
@@ -28,10 +28,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
+  enable: false
+prismjs:
   enable: true
+  preprocess: true
   line_number: true
-  auto_detect: false
-  tab_replace: null
+  tab_replace: ""
 index_generator:
   path: ''
   per_page: 10

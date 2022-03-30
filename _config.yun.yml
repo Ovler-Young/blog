@@ -113,3 +113,5 @@ menu:
     title: HexoPlusPlus
     path: https://hpp.180811.xyz/
     icon: icon-settings-line
+codeblock:
+  copy_btn: true
