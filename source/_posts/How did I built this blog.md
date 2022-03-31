@@ -480,6 +480,10 @@ hexo migrate rss https://180811.xyz/index.php/feed/
 
 - 绑定网址
 
+- 为旧文章打 tag
+
+- 调整配色
+
 ## 主要参考资料
 
 <https://vercel.com/guides/deploying-hexo-with-vercel>
