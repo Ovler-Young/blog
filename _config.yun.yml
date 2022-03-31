@@ -116,8 +116,8 @@ menu:
     icon: icon-settings-line
 codeblock:
   copy_btn: true
-bg_image:
-  enable: false
-  url: https://hexo.180811.xyz/images/background.jpg
-  dark: https://hexo.180811.xyz/images/2830.png
-  opacity: 0.8 
+#bg_image:
+#  enable: false
+#  url: https://hexo.180811.xyz/images/background.jpg
+#  dark: https://hexo.180811.xyz/images/2830.png
+#  opacity: 0.8 
