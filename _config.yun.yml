@@ -119,4 +119,4 @@ bg_image:
   enable: true
   url: https://hexo.180811.xyz/images/2830.jpg
   dark: https://hexo.180811.xyz/images/background.jpg
-  opacity: 0.8
+#  opacity: 0.8
