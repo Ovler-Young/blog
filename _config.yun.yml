@@ -125,3 +125,4 @@ bd_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/Ovler-Young/blog/source/images/2830.png
   dark: https://cdn.jsdelivr.net/gh/Ovler-Young/blog/source/images/2830.png
+  opacity: 0.8
