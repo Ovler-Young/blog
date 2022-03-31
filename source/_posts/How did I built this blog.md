@@ -10,10 +10,6 @@ categories:
 - Technology
 ---
 
-记录了这个站的建立历程
-
-<!-- more -->
-
 ## 零：内容框架、托管服务等的选择及必要的准备
 
 ### 内容框架：选择 Hexo
@@ -443,7 +439,32 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 
 剩下两个 pnpm install 的 deprecated warn 都是来自 [CSS](https://github.com/reworkcss/css) 这个两年没维护的老东西了… 暂时无法处理
 
-## 还要干啥
+### 旧文章导入
+
+之前已有过一个[博客](https://blog.180811.xyz)，为typecho搭建，这次也一并迁移过来。
+
+先在本地安装 `hexo-migrator-rss` 插件：
+
+```powershell
+$ pnpm install hexo-migrator-rss --save
+Packages: +56
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 529, reused 500, downloaded 27, added 56, done
+
+dependencies:
+```
+
+![image-20220331082820673](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203310828886.png)
+
+再运行 `hexo migrate rss <source>` 命令，我的情况是：
+
+```powershell
+hexo migrate rss https://180811.xyz/index.php/feed/
+```
+
+![image-20220331083006026](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203310830157.png)成功导入四篇内容。
+
+## 另：还要干啥
 
 - 把之前的 [typecho 博客](https://blog.180811.xyz) 搬过来
 
@@ -472,3 +493,5 @@ Hexo运行总有好多warning，让我很头疼。于是查阅资料，在[这�
 <https://github.com/lxgw/LxgwWenKai/issues/24>
 
 <https://hexo.io/zh-cn/docs/permalinks>
+
+<https://hexo.io/zh-cn/docs/migration#RSS>
