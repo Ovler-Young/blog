@@ -117,6 +117,6 @@ codeblock:
   copy_btn: true
 bg_image:
   enable: true
-  url: http://127.0.0.1:4000/images/background.jpg
-  dark: http://127.0.0.1:4000/images/background.jpg
+  url: https://hexo.180811.xyz/images/background.jpg
+  dark: http://hexo.180811.xyz/images/background.jpg
   opacity: 0.8
