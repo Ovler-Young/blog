@@ -1,6 +1,7 @@
 language: zh-CN
 
-mode: dark
+mode: auto
+
 social: 
   - name: RSS
     # set rss in your root config
