@@ -464,9 +464,9 @@ hexo migrate rss https://180811.xyz/index.php/feed/
 
 ![image-20220331083006026](https://cdn.jsdelivr.net/gh/Ovler-Young/pic/202203310830157.png)成功导入四篇内容。
 
-## 另：还要干啥
+再对导入的文章做一遍校对，这里就不再赘述了。
 
-- 把之前的 [typecho 博客](https://blog.180811.xyz) 搬过来
+## 另：还要干啥
 
 - 补完站点介绍与个人页面
 
