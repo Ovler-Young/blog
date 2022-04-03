@@ -294,7 +294,7 @@ hexo new page links
 
 根据文档，我的友链配置为：
 
-```yaml
+```markdown
 ---
 layout: links
 title: Friends
@@ -334,7 +334,17 @@ tip: 友链加载中～如失败请刷新重试～
 
 #### 配置背景
 
+在 `_config.yun.yml` 中加入以下配置，完成背景的设置：
 
+```yaml
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/Ovler-Young/blog/source/images/2830.png
+  dark: https://cdn.jsdelivr.net/gh/Ovler-Young/blog/source/images/2830.png
+  opacity: 0.8
+```
+
+注意：这里的图片链接最好是图床等加载较快的图片，太慢的话滑动会闪：（
 
 ### 配置页面
 
