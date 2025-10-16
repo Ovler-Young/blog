@@ -225,7 +225,7 @@ widgets:
         # Author title
         author_title: Student
         # Author's current location
-        location: Beijing, China
+        location: Newyork, USA
         # URL or path to the avatar image
         avatar: /images/avatar.jpg
         # Whether show the rounded avatar image
@@ -272,6 +272,7 @@ widgets:
             System Status: https://up.180811.xyz/status/all
             Portfolio: https://portfolio.180811.xyz/
             Flame: https://flame.180811.xyz/
+            Docs: https://document.180811.xyz/
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
