@@ -23,10 +23,10 @@
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-icarus": "^5.1.1",
+    "hexo-theme-icarus": "^5.3.0",
     "hexo-util": "^2.7.0",
     "js-yaml": "^4.1.0",
-    "lxgw-wenkai-webfont": "^1.6.0"
+    "lxgw-wenkai-webfont": "^1.7.0"
   },
   "scripts": {
     "dev": "hexo server -p $PORT",

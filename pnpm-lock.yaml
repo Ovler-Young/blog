@@ -63,7 +63,7 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       hexo-theme-icarus:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(chokidar@3.6.0)
       hexo-util:
         specifier: ^2.7.0
@@ -72,7 +72,7 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       lxgw-wenkai-webfont:
-        specifier: ^1.6.0
+        specifier: ^1.7.0
         version: 1.7.0
 
 packages:
