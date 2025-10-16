@@ -33,7 +33,7 @@ prismjs:
   enable: true
   preprocess: true
   line_number: true
-  tab_replace: ""
+  tab_replace: ''
 index_generator:
   path: ''
   per_page: 10
@@ -43,16 +43,15 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
-theme: yun
+theme: icarus
 deploy:
   type: github
-
 feed:
   enable: true
   limit: 20
   hub: https://pubsubhubbub.appspot.com/
   content: true
-  order_by: -date
+  order_by: '-date'
   icon: images/avatar.jpg
   autodiscovery: false
   template:
